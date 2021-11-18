@@ -9,7 +9,7 @@
 	-->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-	<title>Ryan - vCard / Resume / CV Template</title>
+	<title>Karolos Mellatos Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta name="description" content="vCard & Resume Template" />
 	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
@@ -189,13 +189,7 @@
 					</div>
 
 					<!-- profile socials -->
-					<div class="social">
-						<a target="_blank" href="https://dribbble.com/"><span class="fa fa-dribbble"></span></a>
-						<a target="_blank" href="https://twitter.com/"><span class="fa fa-twitter"></span></a>
-						<a target="_blank" href="https://github.com/"><span class="fa fa-github"></span></a>
-						<a target="_blank" href="https://www.spotify.com/"><span class="fa fa-spotify"></span></a>
-						<a target="_blank" href="https://stackoverflow.com/"><span class="fa fa-stack-overflow"></span></a>
-					</div>
+					
 					
 					<!-- profile buttons -->
 					<div class="lnks">
@@ -210,320 +204,433 @@
 				</div>
 
 			</div>
-
-			<!--
-				Card - Blog
-			-->
-			<div class="card-inner blog blog-post animated active" id="blog-card">
+			<div class="card-inner animated active" id="about-card">
 				<div class="card-wrap">
 
-					<!--
-						Blog Single
+					<!-- 
+						About 
 					-->
-					<div class="content blog-single">
+					<div class="content about">
 
 						<!-- title -->
-						<div class="title">Blog Post</div>
+						<div class="title">About Me</div>
 
 						<!-- content -->
-						<div class="row border-line-v">
-							<div class="col col-m-12 col-t-12 col-d-12">
-								<div class="post-box">
-									
-									<!-- blog detail -->
-									<h1 class="h-title">Reactjs | Perfect tools for the perfect use cases</h1>
-									<div class="blog-detail">
-										<span class="date">April 10, 2021</span>
-										<span class="cat-links"><a href="#">Javascript</a>, <a href="#">React</a></span>
-										<span class="byline"> by <span class="author"><a href="#">KR Tirtho</a></span></span>
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										I am a full-stack developer having more than 8 years of experience
+in building web and mobile applications. I'm a full stack, polyglot
+developer who is constantly learning how to make web/hybrid apps
+faster, leaner, and perfectly designed. I have worked on +30 CMS,
+CRM, Mobile, Analysis, Blockchain, eCommerce sites so far
+									</p>
+								</div>
+							</div>
+							
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Services
+					-->
+					<div class="content services">
+
+						<!-- title -->
+						<div class="title">My Services</div>
+
+						<!-- content -->
+						<div class="row service-items border-line-v">
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-code"></span>
 									</div>
-									
-									<!-- blog image -->
-									<div class="blog-image">
-										<img src="images/blog/blog1.jpg" alt="" />
-									</div>  
-									
-									<!-- blog content -->
-									<div class="blog-content">
-										<p>
-											React is awesome & one of the most wanted & most used JavaScript frameworks according to StackOverflow survey 2021. With React simplest to complex applications can be done easily. But there are so many reactjs based libraries that we often find "finding libraries" an overwhelming task. Many times, we can't even remember/guess the term related to that library making it way harder to find. So I present you all the perfect tools for perfect the use cases of React
-										</p>
-										<p>
-										State Management
-A major part of React is state management. But there are 2 types of state management done in frontend UI libraries:
-
-UI state (e.g. UI schemes, light/dark mode, etc..)
-Data fetching/Async-data state (e.g. request-response caching, WebSocket event caching, etc..)
-Many people don't even know that these 2 types of state management exist. They just give one solution Redux/Mobx/XState etc. But these are only UI state managers. Though some of 'em (e.g Redux) has Data fetching support through other packages/middlewares (e.g rtk-query) or have started recently, still it isn't complete
-										</p>
-										<p>
-											Data fetching/Network response caching requires caching, invalidation of outdated data, memoization, garbage collection, etc.. which are extremely hard to do manually through a UI state manager. Doing this with UI state managers can often lead to memory leak/high resource usage & other issues
-										</p>
-										<p>
-											Client-side state managers:
-<ol class="ordered">
-<li><strong>zustand</strong>: A real simple, scalable, bearbones (barebone) state manager with no boilerplate but using the same FLUX principal. It's completely hooks-based & follows a single-store pattern. Though multiple stores can be created, all of them will be individual from each other. It's lightweight, fast, supports redux devtools, can be integrated with another awesome state-management pattern library immer & it supports middleware for stores. It's like the perfect state manager that React was missing</li>
-<li><strong>Redux</strong>: The God of state managers. Every UI framework including Dart's Flutter is even supported by it. The pioneer library to implement the FLUX pattern. Redux changed the way of state management. Its performant, configurable, production-ready & provides robust API. Always proved its worth while being in larger production applications. But its boilerplate is overwhelming. Even being so great & useful, many people still hate it because of its huge boilerplate. Though redux-toolkit tried to mitigate that problem. But once you get off the first phase (boilerplate), I can guarantee you'll never regret that you used Redux</li>
-<li><strong>MobX</strong>: Simple, scalable state manager & its framework agnostic. MobX even has Dart support. Its architectural freedom really lets one organize their state any way one wants. Just like Redux, it's battle-tested & production-proven. Its also store based & it mainly provides reactivity through Observables. Also, it's so much transparent & exposes the way it works to the end-user which is really uncommon compared to other libraries'
-recoil: Experimental warning! This state manager is from Facebook. It creates a graph for state attached to the React's tree & state changes flow from roots of this graph (which they call atom) through pure functions known as selectors & into components. It's boilerplate-free, simple, lightweight, compatible with Concurrent React (when this feature in react will be available) & provides ease of usability. It closes the gap that React's Context API can't do</li>
-<li><strong>jotai</strong>: An awesome state-manager based on individual state pattern. Instead of creating a central store, it allows to create/manage state using individual atoms. And yeah, those states are called Atom. It's primitive, flexible, lightweight & super performant. It's from the same creator of zustand but with a different mental model. It's more close to recoil where zustand is close to Redux/MobX</li>
-<li><strong>XState</strong>: An unique state management solution that uses the Finite State machine's concept."A finite state machine is a mathematical model of computation that describes the behavior of a system that can be in only one state at any given time". At first glance, xstate can be confusing but it'd all make sense once you get there. It's a neat state manager</li>
-</ol>
-										</p>
-										<ul class="list-style">
-											Data fetching/Async-data management libraries:
-
-<li>react-query: The missing data-fetching library for React, but in more technical terms, it makes fetching, caching, synchronizing, and updating server state in your React applications a breeze. Before react-query synchronizing with server state & caching was a neck-breaking job. Especially when you get only UI state managers. It removes the pain of managing memory, memoization, caching & outdated data invalidating manually. It's available for react-native too. It's one of the reasons why many developers choose React over other frontend frameworks</li>
-<li>swr: It's pretty similar to react-query. Provides hooks for data fetching & lightweight, supports JAM stack. Also transport & protocol agnostic. It provides fast page navigation, polling on intervals, data dependency, revalidation of cached data on focus, pagination/scroll position recovery & many more. It's from the same team of Nextjs & vercel</li>
-<li>apollo-client: A comprehensive state management library that enables one to manage both local and remote data with GraphQL. Can be used to fetch, cache, and modify application data, all while automatically updating your UI. It's like react-query but for GraphQL. Shares the same hook names too. But it's cross-framework compatible thanks to its community. It's the best Data-fetching library specifically for GraphQL</li>
-<li>rtk-query: It's from redux-toolkit & it's the best match if you're using Redux/redux-toolkit as your UI state manager. It's simple & lightweight. Unlike others, it's not store-based. So all requests are individual. As it is from Redux, you can expect production-grade performance too</li>
-										</ul>
-										<p>
-											Styling
-Component styling is a very important part of any frontend project. The best way is of course with brae minimum CSS but time's most valuable so using some kind of framework or pre-built library is always a plus point
-
-Styling using JavaScript is a new option too though it has an extra runtime cost but provides high customizability. Its called CSS in JS
-
-Another way to keep the customizability freedom but cut off the runtime cost is to use CSS pre-processors. These're highly modular, customizable, offer easy-to-use syntax. And these finally get compiled to functioning CSS
-										</p>
-										<p>
-											<ul class="list-style">
-												CSS based:
-
-<li>tailwindcss: Highly modular/configurable, utility first CSS framework. Has its own jit(Just in time) compiler to cut off unused CSS & push CSS styles on the fly in development. In production, can cut off 100% of unused CSS using purgecss. Almost anything that can be done through CSS can be done using tailwindcss classes</li>
-<li>bootstrap: Twitter's bootstrap is one of the best CSS component frameworks. For being over 10 years in the game, it's the most mature CSS framework. Best for quickly building user interfaces. Provides robust CSS classes that can be used to build any component. Bootstrap provides they're own component set. Also, there are tons of libraries built for bootstrap. So you'll never run out of custom component libraries</li>
-<li>scss: scss/sass is a CSS pre-processor that allows doing all cool stuff with a fairly easy syntax. Previously Sass's compiler was written in Ruby but later it was re-written in Dart. Scss/Sass is also the main building block of bootstrap where previously bootstrap was completely CSS-based</li>
-<li>css modules: Simply, CSS files in which all class names and animation names are scoped locally by default. It keeps the class names of that CSS file completely unique using UUID at the end of each class at build time. It's the best way to keep your component's styles individual from other's</li>
-CSS in JS based:
-
-<li>styled-components: One of the best CSS in JS library. It allows styling using JS's new tag template function syntax. Allows theming, supports style inheritance, editor's CSS IntelliSense support, cross-compatible with other CSS frameworks & allows passing/accessing props through style functions/arguments</li>
-<li>emotion: Another CSS-in-JS library but its framework-agnostic. Offers high performance & ease of usability. It supports styling with both object & string. Emotion is really developer friendly & thus many bigger UI component libraries use it</li>
-<li>xstyled: It's a utility-first CSS-in-JS framework built for React. It makes it easy to consistent design system and scale it over time. Unlike other CSS-in-JS libraries, it allows one to style via passing props. It matches React's declarative term perfectly. Provides theming support. It's like tailwindcss but made with CSS-in-JS. But it isn't a complete CSS-in-JS library. It requires either styled-component or @emotion/react @emotion/styled as it uses them under the hood</li>
-<li>JSS: Another framework-agnostic CSS-in-JS library. It's simple, minimal & provides all the basic & barebones without any bloat & has a plugin system. It's a major choice for bigger UI component frameworks as it can do a lot if one can define it. Its also very lightweight</li>
-											</ul>
-										</p>
-										<p>UI components
-UI components are simply pre-built components that can be configured/tweaked for other design foundations. UI components save a lot of developer time & make the development easier. Also, its managed by so many people that they're often more secure & performant comparing to components built manually
-
-So many UI component libraries are available. Many of them are completely individual & many are based on the philosophy & design pattern of bigger design systems</p>
-										<p>
-											<ul class="list-style">
-												Here is the list:
-
-<li>chakra-ui: Modular component library. It's like the tailwindcss of React but made with style as props pattern. Highly configurable theming support. Can be configured to look like anything & has a huge component library</li>
-<li>material-ui: The most famous UI component library in React ecosystem. Provides 200+ components, highly configurable & based on google's material-design principal. But currently, it's suffering from a Typescript type-related bug that makes the tsserver super slow to determine types. But it'll be fixed in the next major update v5 which is already in beta. This bug can slow down low-spec PCs easily but if you've got a mid-high spec PC then don't stop, use it. Also awesome if you're not using Typescript in your project</li>
-<li>react-bootstrap: React implementation of famous CSS framework bootstrap
-ant-design react: A UI component framework provided by ant-design for React based on the ant-design system. Highly customizable, supports theming & provides a huge number of components.</li>
-<li>grommet: Responsive, mobile-first, carefully designed UI component library for react. Has a large number of components. And their design is just beautiful. Simple, minimal & highly responsive
-evergreen: A flexible, contributor-friendly, sensible-default style providing UI component framework. Its foundation is super beautiful, provides a minimal design system & is unique among all</li>
-Info!: I'm building a UI component library based on tailwindcss which is gonna be a cross-framework library. At the start, react & vue support will be provided & svelte support is planned too. Its name is revind. And the project needs more contributors. If you want to contribute, head to https://github.com/FotieMConstant/revind or contact me via Twitter
-											</ul>
-										</p>
-										<p>
-											Form handlers
-Handling Forms is a hard thing in react. Controlling, validating input, reset state on successful submit, checking whether the input was touched, etc.. are a lot of work to do. But luckily, there are form handling libraries that make it a breeze
-			<ul class="list-style">
-				List of form handlers:
-
-<li>formik</li>
-<li>react-hook-form</li>
-<li>react-final-form</li>
-
-				</ul>
-										</p>
-										<p>
-											GraphQL
-The graph query language provides a way to fetch only required data saving both user's & server's bandwidth. A technology by Facebook that sits on top of HTTP to work. It only uses the HTTP POST verb to transfer data. It's modern & makes HTTP connections more eco-friendly
-<ul class="list-style">
-	Popular graphql libraries for React are:
-
-<li>Apollo Client by Apollo Server</li>
-<li>Relay by facebook</li>
-<li>urql - universal react query library</li>
-	</ul>
-										</p>
-										<p>
-											<ul class="list-style">
-												Essential UI helper components/hook
-<li>1. Tables</li>
-
-Tables are most often needed for data-driven applications. But handling this amount of dynamic text manually can be a hazard. But these React Table libraries saves the day
-
-List of table libraries:
-
-<p>material-table (best if using material-ui)</p>
-<p>react-table (from the creator of react-query)</p>
-<p>MUI-Datatables (another best match for material-ui)</p>
-<p>react-virtualized (awesome for being framework-agnostic)</p>
-<li>2. Animation libraries</li>
-
-Animations are now a modern trend. Every website/app has some kind of animations to make the end user's experience amazing. But creating such awesome animations isn't easy, it includes mathematics, algorithms & sometimes GPU acceleration too. But following react animation libraries made that work easy...
-
-List of animation libraries:
-
-<p>react-spring</p>
-<p>framer-motion</p>
-<p>remotion</p>
-<p>react-move</p>
-<li>3. Loaders/Skeleton/Progress-bar</li>
-
-Always need a fallback when data is being fetched from the server, right? Showing loaders/skeleton/progress-bar makes it easier for users to wait & gives your site fewer "go away at first click" scores
-
-Below are awesome loader libraries that can be used with React:
-
-<p>react-content-loader</p>
-<p>react-loader-spinner</p>
-<p>react-spinners</p>
-<p>@tenem/react-nprogress</p>
-<p>react-loading-skeleton</p>
-<p>react-top-loading-bar</p>
-<li>4. Infinite Scroll</li>
-
-Pagination is becoming an older way. Because of the increasing amount of smartphone users, it's now more convenient to use infinite scroll to get more data or an infinite amount of data. But doing so involves a lot of DOM manipulation via refs thus doing it manually is kind of a hazard. So infinite scroll component/hook libraries exist
-
-List of infinite scroll component/hook libraries:
-
-<p>react-waypoint</p>
-<p>react-infinite-scroller</p>
-<p>react-list</p>
-<p>react-infinite-scroll-component</p>
-<p>react-simple-infinite-scroll</p>
-<p>Libreact</p>
-
-Another awesome react library is libreact. It's an awesome collection of all misc. react components that we don't need very often but sometimes become essential. libreact provides these components separately or as a collection. But either way, it almost contains all less essential components at the perfect time when we need 'em
-											</ul>
-										</p>
-
+									<div class="name">
+										<span >
+										SaaS Development</span>
 									</div>
-
-									<div class="post-text-bottom">	
-										<div class="social-share">
-											<span>Share</span>
-											<a class="share-btn share-btn-facebook" title="Share on Facebook"><i class="ion ion-social-facebook"></i></a>
-											<a class="share-btn share-btn-twitter" title="Share on Twitter"><i class="ion ion-social-twitter"></i></a>
-											<a class="share-btn share-btn-linkedin" title="Share on Linkedin"><i class="ion ion-social-linkedin"></i></a>
-											<a class="share-btn share-btn-reddit" title="Share on Reddit"><i class="ion ion-social-reddit"></i></a>
-											<a class="share-btn share-btn-pinterest" title="Share on Pinterest"><i class="ion ion-social-pinterest"></i></a>
+									<div class="desc">
+										<div >
+											<p>Good experience working on different types of SaaS platform.</p>
 										</div>
-										<span class="tags-links">Taggs: <a href="#">code</a><a href="#">html</a><a href="#">plugin</a><a href="#">wordpress</a></span>
 									</div>
+								</div>
+							</div>
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-code"></span>
+									</div>
+									<div class="name">
+										<span >
+											CMS Development							</span>
+									</div>
+									<div class="desc">
+										<div >
+											<p>Strong at modern headless CMS like Contentful, Strapi, etc.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-gamepad"></span>
+									
+									</div>
+									<div class="name">
+										<span >
+										eCommerce, Marketplace							</span>
+									</div>
+									<div class="desc">
+										<div >
+											<p>Good experience with eCommerce, market place development.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-gamepad"></span>
+									
+									</div>
+									<div class="name">
+										<span >
+										Database Design						</span>
+									</div>
+									<div class="desc">
+										<div >
+											<p>Good experience with eCommerce, market place development.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-buysellads"></span>
+									</div>
+									<div class="name">
+										<span >
+										FinTech Platforms								</span>
+									</div>
+									<div class="desc">
+										<div >
+											<p>Have built several FinTech platforms that leverage various types of financial.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="clear"></div>
 
-						<nav class="navigation post-navigation">
-							<div class="nav-links">
-								<div class="nav-previous"><a href="#"><span class="post-nav-next post-nav-text">Prev</span></a></div>
-								<div class="nav-next"><a href="#"><span class="post-nav-prev post-nav-text">Next</span></a></div>
-							</div>
-						</nav>
+					</div>
 
-						<div class="post-comments">
-							<div class="title">
-								<div class="title_inner">3 Comments</div>
+					<!--
+						Price Tables
+					-->
+					
+
+				</div>
+			</div>
+
+			<!--
+				Card - Resume
+			-->
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+
+					<!--
+						Resume
+					-->
+					<div class="content resume">
+
+						<!-- title -->
+						<div class="title">Resume</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- experience -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-briefcase"></i></div>
+									<div class="name">Experience</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">May 2021 - Present</div>
+										<div class="name">Full stack Enigineer</div>
+										<div class="company">Self Employed</div>
+										
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">Sep 2019 - May 2021</div>
+										<div class="name">Full Stack Developer</div>
+										<div class="company">Heuro Labs GmbH</div>
+										
+											<ul style="padding: 0;" class="company-items">
+												<li>Developed headless CMS with React.js, Node.js, and Strapi</li>
+												<li>Upgraded a powerful SaaS using Vue.js and Vuex, Vuetify framework</li>
+												<li>Updated and added new RESTful APIs by using Apollo GraphQL +
+													AWS Lambda function</li>
+												<li>Improved search algorithm and architecture (+30% Big O)</li>
+												<li>Implemented Aherf service for SEO and added JSON-LD for
+													better search user experience.</li>
+												<li>Increased CTR(Clickthrough rate) depends on A/B tests (+24%
+													improved)</li>
+												<li>Integrated payment gateway (stripe API) and localized by using
+													i18n</li>
+												<li>Transformed localStorage-based state management to Vuex-
+													based system - Contributed to the in-browser slide generator and
+													
+													renderer using VueJS</li>
+											</ul>
+										
+									</div>
+									<div class="resume-item">
+										<div class="date">Jun 2018- Aug 2019</div>
+										<div class="name">Full Stack Developer</div>
+										<div class="company">Eton Digital Ltd.</div>
+										<ul style="padding: 0;" class="company-items">
+											<li>Improved a FinTech platform on the Frontend side and API
+												implementation in React</li>
+											<li>Developed mobile app from desktop web version with Firebase</li>
+											<li>Added 30+ components to be used in the global app by using
+												styled-components</li>
+											<li>Redesigned global state management system with Redux thunk</li>
+											<li>Simplified and improved UX from new design</li>
+											<li>Improved performance by optimizing codes with modern JS and
+												API handling</li>
+											<li>Developed Admin panel with React and Node</li>
+										</ul>
+									
+									</div>
+									<div class="resume-item">
+										<div class="date">Aug 2017- Jun 2018 </div>
+										<div class="name">Mern Stack Developer</div>
+										<div class="company">Eton Digital Ltd.</div>
+										<ul style="padding: 0;" class="company-items">
+											<li>Upgraded architecture of an enterprise clothing platform React,
+												Node, MongoDB, Firebase (+7% improved in a number of
+												requests per second)</li>
+											<li>Developed headless CRM by using Strapi, Node, and React</li>
+											<li>Redesigned database MySQL to MongoDB</li>
+											<li>Developed price analysis platform depend on Price API and
+												Google Merchant API with React and .Net</li>
+											<li>Set up and administered a continuous integration system based
+												on CruiseControl.NET, including nightly builds with unit tests run
+												and delivery to the test servers.</li>
+											<li>Switched to TeamCity for database scripts, versioning, and
+												updating the system.</li>
+											<li>Optimized the website's performance and planned for the web
+												farm scaling: caching, using CDN, styles, and scripts bundling, and
+												minification.</li>
+												<li>Created and modified the database stored procedures, views, and
+													functions.</li>
+										</ul>
+									
+									</div>
+									<div class="resume-item">
+										<div class="date">Oct 2015- Feb 2017 </div>
+										<div class="name">Full Stack Developer</div>
+										<div class="company">Blockchain Terminal (BCT)</div>
+										<ul style="padding: 0;" class="company-items">
+											<li>Acted as a Full Stack developer in a 30+ dev team for 2 years</li>
+											<li>Improved UI/UX with React, Node, styled-components, d3.js,
+												TradingView</li>
+											<li>Developed and improved performance of +10 animation effects
+												with custom styling</li>
+											<li>Simplified global state management by using Mobx</li>
+											<li>Simplified global state management by using Mobx
+												Suggested and Integrated real-time communication mechanism
+												with Socket.IO and ws(npm package)</li>
+											
+										</ul>
+									
+									</div>
+									<div class="resume-item">
+										<div class="date">Feb 2014- Aug 2015 </div>
+										<div class="name">Full Stack Developer</div>
+										<div class="company">Steficon Greece</div>
+										<ul style="padding: 0;" class="company-items">
+											<li>Launched a Team Management CRM platform with jQuery, Node,
+												Firebase, Salesforce and Twilio API</li>
+											<li>Integrated Socket.IO for real-time team collaboration using
+												NodeJS</li>
+											<li>Developed chrome extension app for video conferencing by using
+												WebRTC and Socket.IO</li>
+										</ul>
+									
+									</div>
+								</div>
 							</div>
-							<div class="row border-line-v comments-row">
-								<div class="col col-m-12 col-t-12 col-d-12">
-									<ul class="comments">
-										<li class="comment post-comment">
-											<div class="comment">
-												<div class="comment-image image">
-													<img src="images/man1.jpg" class="avatar" height="80" width="80" alt="" />	
-												</div>
-												<div class="comment-desc desc">
-													<div class="comment-name name">
-														<span class="comment-author">John Doe</span>
-														<span class="comment-time">8:16 pm</span>
-														<span class="comment-date">April 28, 2020</span>
-														<span class="comment-reply">
-															<a class="comment-reply-link" href="#">Reply</a>	
-														</span>
-													</div>
-													<div class="comment-text">
-														<p>An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione tacimates vituperatoribus, ut mutat delenit est.</p>
-													</div>
-												</div>
+
+							<!-- education -->
+							<div class="\ border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-university"></i></div>
+									<div class="name">Education</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h">
+										<div class="date">2009 - 2013</div>
+										<div class="name">ARISTOTLE UNIVERSITY OF THESSALONIKI (AUTH)</div>
+									
+										<p>
+											Bachelor's Degree, Computer Science 
+										</p>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Skills
+					-->
+					<div class="content skills">
+
+						<!-- title -->
+						<div class="title">My Skills</div>
+					
+						<!-- content -->
+						<div class="row">
+						
+							<!-- skill item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="skills-list">
+								
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">JavaScript</div>
+											<div class="progress">
+												<div class="percentage" style="width:100%;"></div>
 											</div>
 										</li>
-										<ul class="children">
-											<li class="comment post-comment">
-												<div class="comment">
-													<div class="comment-image image">
-														<img src="images/man1.jpg" class="avatar" height="80" width="80" alt="" />	
-													</div>
-													<div class="comment-desc desc">
-														<div class="comment-name name">
-															<span class="comment-author">John Doe</span>
-															<span class="comment-time">8:16 pm</span>
-															<span class="comment-date">April 28, 2020</span>
-															<span class="comment-reply">
-																<a class="comment-reply-link" href="#">Reply</a>	
-															</span>
-														</div>
-														<div class="comment-text">
-															<p>An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione tacimates vituperatoribus, ut mutat delenit est.</p>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-										<li class="comment post-comment">
-											<div class="comment">
-												<div class="comment-image image">
-													<img src="images/man1.jpg" class="avatar" height="80" width="80" alt="" />	
-												</div>
-												<div class="comment-desc desc">
-													<div class="comment-name name">
-														<span class="comment-author">John Doe</span>
-														<span class="comment-time">8:16 pm</span>
-														<span class="comment-date">April 28, 2020</span>
-														<span class="comment-reply">
-															<a class="comment-reply-link" href="#">Reply</a>	
-														</span>
-													</div>
-													<div class="comment-text">
-														<p>An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione tacimates vituperatoribus, ut mutat delenit est.</p>
-													</div>
-												</div>
+										<li class="border-line-h"> 
+											<div class="name">React</div>
+											<div class="progress">
+												<div class="percentage" style="width:100%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Vue</div>
+											<div class="progress">
+												<div class="percentage" style="width:95%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Angular</div>
+											<div class="progress">
+												<div class="percentage" style="width:95%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Node</div>
+											<div class="progress">
+												<div class="percentage" style="width:95%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Laravel</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
 											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
+
+						
+							<!-- skill item -->
+							
+							
+							
+							<div class="clear"></div>
 						</div>
 						
-						<div class="post-comments">
-							<div class="title">Leave a Comment</div>
-							<div class="row border-line-v">
-								<div class="col col-m-12 col-t-12 col-d-12">
-									<div class="post-box">
-										<form id="cform" method="post">
-											<div class="row">
-												<div class="col col-d-12 col-t-12 col-m-12">
-													<div class="group-val">
-														<input type="text" name="name" placeholder="Full Name" />
-													</div>
+					</div>
+
+					<!--
+						Testimonials
+					-->
+					<div class="content testimonials">
+
+						<!-- title -->
+						<div class="title">Testimonials</div>
+
+						<!-- content -->
+						<div class="row testimonials-items">
+
+							<!-- client item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="revs-carousel default-revs">
+									<div class="owl-carousel">
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 												</div>
-												<div class="col col-d-12 col-t-12 col-m-12">
-													<div class="group-val">
-														<textarea name="message" placeholder="Your Message"></textarea>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Helen Floyd</div>
+														<div class="company">Art Director</div>
 													</div>
+													<div class="clear"></div>
 												</div>
 											</div>
-											<div class="align-left">
-												<a href="#" class="button" onclick="$('#cform').submit(); return false;">
-													<span class="text">Add Comment</span>
-													<span class="arrow"></span>
-												</a>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Robert Chase</div>
+														<div class="company">CEO</div>
+													</div>
+													<div class="clear"></div>
+												</div>
 											</div>
-										</form>
-										<div class="alert-success">
-											<p>Thanks, your message is sent successfully.</p>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Helen Floyd</div>
+														<div class="company">Art Director</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+
+							<div class="clear"></div>
 						</div>
 
 					</div>
@@ -531,6 +638,272 @@ Another awesome react library is libreact. It's an awesome collection of all mis
 				</div>
 			</div>
 
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+
+					<!--
+						Works
+					-->
+					<div class="content works">
+
+						<!-- title -->
+						<div class="title">Recent Works</div>
+
+						<!-- filters -->
+						<div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="React" />React</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="Vue" />Vue</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="Angular" />Angular</label>
+							</div>
+							
+						</div>
+
+						<!-- content -->
+						<div class="row grid-items border-line-v">
+
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item React border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/5.png" class="has-popup-image">
+											<img src="images/works/5.png" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/5.png" class="name has-popup-image">Driver Manager: Vue.js</a>
+										<p></p>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item video -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item React border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/6.png" class="has-popup-video">
+											<img src="images/works/6.png" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/6.png" class="name has-popup-video">Shipping Platform: Vue.js, Laravel</a>
+										
+									</div>
+								</div>
+							</div>
+
+							<!-- work item music -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item Vue border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/3.png" class="has-popup-music">
+											<img src="images/works/3.png" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Blockchain Service: React</a>
+										
+									</div>
+								</div>
+							</div>
+
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item Vue border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/4.png" class="has-popup-music">
+											<img src="images/works/4.png" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Marketing Dashboard: React</a>
+										
+									</div>
+								</div>
+							</div>
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item Angular border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/1.png" class="has-popup-gallery">
+											<img src="images/works/1.png" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+										
+									</div>
+									<div class="desc">
+										<a href="images/works/work5.jpg" class="name has-popup-image">Angular collaboration platform</a>
+										
+									</div>
+								</div>
+							</div>
+
+							<!-- work item music -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item Angular border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/2.png" class="has-popup-music">
+											<img src="images/works/2.png" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Angular travel booking</a>
+										
+									</div>
+								</div>
+							</div>
+
+							
+												
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+			<!--
+				Card - Blog
+			-->
+			<div id="card-slide">
+				<div class="card-inner blog" id="blog-card">
+					<div class="card-wrap">
+	
+						<!-- Blog -->
+						<div class="content blog">
+	
+							<!-- title -->
+							<div class="title">
+								<span >Blog</span>
+							</div>
+	
+							<!-- content -->
+							<div class="row border-line-v">
+								<!-- blog item -->
+								<div class="col col-d-6 col-t-6 col-m-12">
+									<div class="box-item">
+										<div class="image">
+											<a href="blog-post-new.html">
+												<img src="images/blog/blog1.jfif" alt="By spite about do of allow" />
+												<span class="info">
+													<span class="ion ion-document-text"></span>
+												</span>
+											</a>
+										</div>
+										<div class="desc">
+											<a href="blog-post-new.html">
+												<span class="date">August 10, 2021</span>
+											</a>
+											<a href="blog-post-new.html" class="name">Reactjs | Perfect tools for the perfect use cases🛠️💥</a>
+											<div class="text">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- blog item -->
+								<div class="col col-d-6 col-t-6 col-m-12">
+									<div class="box-item">
+										<div class="image">
+											<a href="../ryan/blog2.html">
+												<img src="images/blog/blog2.jpg" alt="By spite about do of allow" />
+												<span class="info">
+													<span class="ion ion-document-text"></span>
+												</span>
+											</a>
+										</div>
+										<div class="desc">
+											<a href="../ryan/blog2.html">
+												<span class="date">24 Nov 2019</span>
+											</a>
+											<a href="../ryan/blog2.html" class="name">Migrating from react-native-router-flux to react-router for web compatibility</a>
+											<div class="text">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- blog item -->
+								<div class="col col-d-6 col-t-6 col-m-12">
+									<div class="box-item">
+										<div class="image">
+											<a href="../ryan/blog1.html">
+												<img src="images/blog/photo-1495839924086-b11bf070c5ae_ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49a6210b9bca20cfbf5dbd673baf6c0a&auto=format&fit=crop&w=1000&h=420&q=80" alt="By spite about do of allow" />
+												<span class="info">
+													<span class="ion ion-document-text"></span>
+												</span>
+											</a>
+										</div>
+										<div class="desc">
+											<a href="../ryan/blog1.html">
+												<span class="date">May 28, 2018</span>
+											</a>
+											<a href="../ryan/blog1.html" class="name">Vue <3 GraphQL</a>
+											<div class="text">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col col-d-6 col-t-6 col-m-12">
+									<div class="box-item">
+										<div class="image">
+											<a href="blog3.html">
+												<img src="../ryan/images/blog/39aclyok40m4gbsf0450.jfif" alt="By spite about do of allow" />
+												<span class="info">
+													<span class="ion ion-document-text"></span>
+												</span>
+											</a>
+										</div>
+										<div class="desc">
+											<a href="blog3.html">
+												<span class="date">August 18, 2020</span>
+											</a>
+											<a href="blog3.html" class="name">TypeScript-first middleware for AWS lambdas</a>
+											<div class="text">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+	
+							
+	
+						</div>
+	
+					</div>
+				</div>
+			</div>
+	
 			<!--
 				Card - Contacts
 			-->
@@ -546,20 +919,21 @@ Another awesome react library is libreact. It's an awesome collection of all mis
 						<div class="title">Get in Touch</div>
 
 						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="map" id="map"></div>
-								<div class="info-list">
-									<ul>
-										<li><strong>Address . . . . .</strong> California, USA</li>
-										<li><strong>Email . . . . .</strong> adlard@example.com</li>
-										<li><strong>Phone . . . . .</strong> +123 654 78900</li>
-										<li><strong>Freelance . . . . .</strong> Available</li>
-									</ul>
+							<!-- content -->
+							<div class="row">
+								<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								
+									<div class="info-list">
+										<ul>
+											<li><strong>Address . . . . .</strong> Florina, Greece</li>
+											<li><strong>Email . . . . .</strong> k.mellatos@gmail.com</li>
+											
+											<li><strong>LinkedIn . . . . .</strong> k-mellatos</li>
+										</ul>
+									</div>
 								</div>
+								<div class="clear"></div>
 							</div>
-							<div class="clear"></div>
-						</div>
 
 					</div>
 
@@ -612,6 +986,296 @@ Another awesome react library is libreact. It's an awesome collection of all mis
 
 				</div>
 			</div>
+				
+
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog blog-post animated active" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog Single
+					-->
+					<div class="content blog-single">
+
+						<!-- title -->
+						<div class="title">Blog Post</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-m-12 col-t-12 col-d-12">
+								<div class="post-box">
+									
+									<!-- blog detail -->
+									<h1 class="h-title">Reactjs | Perfect tools for the perfect use cases</h1>
+									<div class="blog-detail">
+										<span class="date">April 10, 2021</span>
+										<span class="cat-links"><a href="#">Javascript</a>, <a href="#">React</a></span>
+										<span class="byline"> by <span class="author"><a href="#">KR Tirtho</a></span></span>
+									</div>
+									
+									<!-- blog image -->
+									<div class="blog-image">
+										<img src="../ryan/images/blog/blog1.jfif" alt="" />
+									</div>  
+									
+									<!-- blog content -->
+									<div class="blog-content">
+										<div class="crayons-article__body text-styles spec__body" data-article-id="787144" id="article-body">
+											<p>React is awesome &amp; one of the most wanted &amp; most used JavaScript frameworks according to <a href="https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe">StackOverflow survey 2021</a>. With React simplest to complex applications can be done easily. But there are so many reactjs based libraries that we often find "finding libraries" an overwhelming task. Many times, we can't even remember/guess the term related to that library making it way harder to find. So I present you all the perfect tools for perfect the use cases of React</p>
+								
+								<blockquote>
+								<p>I'm not going into full detail here. Just a simple introduction to the libraries that I mentioned or not at all. You'll find their docs more useful than this post/article/blog</p>
+								</blockquote>
+								
+								<h3>
+								  <a name="state-management" href="#state-management">
+								  </a>
+								  State Management
+								</h3>
+								
+								<p>A major part of React is state management. But there are 2 types of state management done in frontend UI libraries:</p>
+								
+								<ol>
+								<li>UI state (e.g. UI schemes, light/dark mode, etc..)</li>
+								<li>Data fetching/Async-data state (e.g. request-response caching, WebSocket event caching, etc..)</li>
+								</ol>
+								
+								<p>Many people don't even know that these 2 types of state management exist. They just give one solution Redux/Mobx/XState etc.  But these are only UI state managers. Though some of 'em (e.g Redux) has Data fetching support through other packages/middlewares (e.g rtk-query) or have started recently, still it isn't complete</p>
+								
+								<p>Data fetching/Network response caching requires caching, invalidation of outdated data, memoization, garbage collection, etc.. which are extremely hard to do manually through a UI state manager. Doing this with UI state managers can often lead to memory leak/high resource usage &amp; other issues</p>
+								
+								<p>Client-side state managers:</p>
+								
+								<ol>
+								<li>
+								<strong><a href="https://zustand.surge.sh/">zustand</a></strong>: A real simple, scalable, bearbones (barebone) state manager with no boilerplate but using the same FLUX principal. It's completely hooks-based &amp; follows a single-store pattern. Though multiple stores can be created, all of them will be individual from each other. It's lightweight, fast, supports redux devtools, can be integrated with another awesome state-management pattern library <a href="https://immerjs.github.io/immer/"><code>immer</code></a> &amp; it supports middleware for stores. It's like the perfect state manager that React was missing</li>
+								<li>
+								<strong><a href="https://redux.js.org/">Redux</a></strong>: The God of state managers. Every UI framework including Dart's Flutter is even supported by it. The pioneer library to implement the FLUX pattern. Redux changed the way of state management. Its performant, configurable, production-ready &amp; provides robust API. Always proved its worth while being in larger production applications. But its boilerplate is overwhelming. Even being so great &amp; useful, many people still hate it because of its huge boilerplate. Though redux-toolkit tried to mitigate that problem. But once you get off the first phase (boilerplate), I can guarantee you'll never regret that you used Redux</li>
+								<li>
+								<strong><a href="https://mobx.js.org/">MobX</a></strong>: Simple, scalable state manager &amp; its framework agnostic. MobX even has Dart support. Its architectural freedom really lets one organize their state any way one wants. Just like Redux, it's battle-tested &amp; production-proven. Its also store based &amp; it mainly provides reactivity through Observables. Also, it's so much transparent &amp; exposes the way it works to the end-user which is really uncommon compared to other libraries'</li>
+								<li>
+								<strong><a href="https://recoiljs.org/">recoil</a></strong>: Experimental warning! This state manager is from Facebook. It creates a graph for state attached to the React's tree &amp; state changes flow from roots of this graph (which they call atom) through pure functions known as selectors &amp; into components. It's boilerplate-free, simple, lightweight, compatible with Concurrent React (when this feature in react will be available) &amp; provides ease of usability. It closes the gap that React's Context API can't do</li>
+								<li>
+								<strong><a href="https://jotai.pmnd.rs/">jotai</a></strong>: An awesome state-manager based on individual state pattern. Instead of creating a central store, it allows to create/manage state using individual atoms. And yeah, those states are called Atom. It's primitive, flexible, lightweight &amp; super performant. It's from the same creator of <code>zustand</code> but with a different mental model. It's more close to <code>recoil</code> where <code>zustand</code> is close to Redux/MobX</li>
+								<li>
+								<strong><a href="https://xstate.js.org/">XState</a></strong>: An unique state management solution that uses the <em>Finite State machine's</em> concept.<em>"A finite state machine is a mathematical model of computation that describes the behavior of a system that can be in only one state at any given time".</em> At first glance, xstate can be confusing but it'd all make sense once you get there. It's a neat state manager</li>
+								</ol>
+								
+								<p>Data fetching/Async-data management libraries:</p>
+								
+								<ol>
+								<li>
+								<strong><a href="https://react-query.tanstack.com/">react-query</a></strong>: The missing data-fetching library for React, but in more technical terms, it makes fetching, caching, synchronizing, and updating server state in your React applications a breeze. Before react-query synchronizing with server state &amp; caching was a neck-breaking job. Especially when you get only UI state managers. It removes the pain of managing memory, memoization, caching &amp; outdated data invalidating manually. It's available for react-native too. It's one of the reasons why many developers choose React over other frontend frameworks</li>
+								<li>
+								<strong><a href="https://swr.vercel.app/">swr</a></strong>: It's pretty similar to react-query. Provides hooks for data fetching &amp; lightweight, supports JAM stack. Also transport &amp; protocol agnostic. It provides fast page navigation, polling on intervals, data dependency, revalidation of cached data on focus, pagination/scroll position recovery &amp; many more. It's from the same team of <em>Nextjs &amp; vercel</em>
+								</li>
+								<li>
+								<strong><a href="https://www.apollographql.com/docs/react/">apollo-client</a></strong>: A comprehensive state management library that enables one to manage both local and remote data with GraphQL. Can be used to fetch, cache, and modify application data, all while automatically updating your UI. It's like react-query but for GraphQL. Shares the same hook names too. But it's cross-framework compatible thanks to its community. It's the best Data-fetching library specifically for GraphQL</li>
+								<li>
+								<strong><a href="https://redux-toolkit.js.org/tutorials/rtk-query/">rtk-query</a></strong>: It's from <code>redux-toolkit</code> &amp; it's the best match if you're using Redux/redux-toolkit as your UI state manager. It's simple &amp; lightweight. Unlike others, it's not store-based. So all requests are individual. As it is from Redux, you can expect production-grade performance too</li>
+								</ol>
+								
+								<h3>
+								  <a name="styling" href="#styling">
+								  </a>
+								  Styling
+								</h3>
+								
+								<p>Component styling is a very important part of any frontend project. The best way is of course with brae minimum CSS but time's most valuable so using some kind of framework or pre-built library is always a plus point</p>
+								
+								<p>Styling using JavaScript is a new option too though it has an extra runtime cost but provides high customizability. Its called CSS in JS</p>
+								
+								<p>Another way to keep the customizability freedom but cut off the runtime cost is to use CSS pre-processors. These're highly modular, customizable, offer easy-to-use syntax. And these finally get compiled to functioning CSS</p>
+								
+								<p>CSS based:</p>
+								
+								<ol>
+								<li>
+								<strong><a href="https://tailwindcss.com/">tailwindcss</a></strong>: Highly modular/configurable, utility first CSS framework. Has its own jit(Just in time) compiler to cut off unused CSS &amp; push CSS styles on the fly in development. In production, can cut off 100% of unused CSS using <code>purgecss</code>. Almost anything that can be done through CSS can be done using tailwindcss classes</li>
+								<li>
+								<strong><a href="https://getbootstrap.com/">bootstrap</a></strong>: Twitter's bootstrap is one of the best CSS component frameworks. For being over 10 years in the game, it's the most mature CSS framework. Best for quickly building user interfaces. Provides robust CSS classes that can be used to build any component. Bootstrap provides they're own component set. Also, there are tons of libraries built for bootstrap. So you'll never run out of custom component libraries</li>
+								<li>
+								<strong><a href="https://sass-lang.com/">scss</a></strong>: scss/sass is a CSS pre-processor that allows doing all cool stuff with a fairly easy syntax. Previously Sass's compiler was written in Ruby but later it was re-written in Dart. Scss/Sass is also the main building block of bootstrap where previously bootstrap was completely CSS-based</li>
+								<li>
+								<strong><a href="https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/">css modules</a></strong>: Simply, CSS files in which all class names and animation names are scoped locally by default. It keeps the class names of that CSS file completely unique using UUID at the end of each class at build time. It's the best way to keep your component's styles individual from other's</li>
+								</ol>
+								
+								<p>CSS in JS  based:</p>
+								
+								<ol>
+								<li>
+								<strong><a href="https://styled-components.com/">styled-components</a></strong>: One of the best CSS in JS library. It allows styling using JS's new tag template function syntax. Allows theming, supports style inheritance, editor's CSS IntelliSense support, cross-compatible with other CSS frameworks &amp; allows passing/accessing props through style functions/arguments</li>
+								<li>
+								<strong><a href="https://emotion.sh/">emotion</a></strong>: Another CSS-in-JS library but its framework-agnostic. Offers high performance &amp; ease of usability. It supports styling with both object &amp; string. Emotion is really developer friendly &amp; thus many bigger UI component libraries use it</li>
+								<li>
+								<strong><a href="https://xstyled.dev/">xstyled</a></strong>: It's a utility-first CSS-in-JS framework built for React. It makes it easy to consistent design system and scale it over time. Unlike other CSS-in-JS libraries, it allows one to style via passing props. It matches React's declarative term perfectly. Provides theming support. It's like tailwindcss but made with CSS-in-JS. But it isn't a complete CSS-in-JS library. It requires either <code>styled-component</code> or <code>@emotion/react @emotion/styled</code> as it uses them under the hood</li>
+								<li>
+								<strong><a href="https://cssinjs.org/">JSS</a></strong>: Another framework-agnostic CSS-in-JS library. It's simple, minimal &amp; provides all the basic &amp; barebones without any bloat &amp; has a plugin system. It's a major choice for bigger UI component frameworks as it can do a lot if one can define it. Its also very lightweight</li>
+								</ol>
+								
+								<h3>
+								  <a name="ui-components" href="#ui-components">
+								  </a>
+								  UI components
+								</h3>
+								
+								<p>UI components are simply pre-built components that can be configured/tweaked for other design foundations. UI components save a lot of developer time &amp; make the development easier. Also, its managed by so many people that they're often more secure &amp; performant comparing to components built manually</p>
+								
+								<p>So many UI component libraries are available. Many of them are completely individual &amp; many are based on the philosophy &amp; design pattern of bigger design systems</p>
+								
+								<p>Here is the list:</p>
+								
+								<ol>
+								<li>
+								<strong><a href="https://chakra-ui.com/">chakra-ui</a>:</strong> Modular component library. It's like the tailwindcss of React but made with style as props pattern. Highly configurable theming support. Can be configured to look like anything &amp; has a huge component library</li>
+								<li>
+								<strong><a href="https://material-ui.com/">material-ui</a>:</strong> The most famous UI component library in React ecosystem. Provides 200+ components, highly configurable &amp; based on google's material-design principal. But currently, it's suffering from a Typescript type-related bug that makes the tsserver super slow to determine types. But it'll be fixed in the next major update v5 which is already in beta. This bug can slow down low-spec PCs easily but if you've got a mid-high spec PC then don't stop, use it. Also awesome if you're not using Typescript in your project</li>
+								<li>
+								<strong><a href="https://react-bootstrap.github.io/">react-bootstrap</a>:</strong> React implementation of famous CSS framework bootstrap</li>
+								<li>
+								<strong><a href="https://ant.design/docs/react/introduce">ant-design react</a>:</strong> A UI component framework provided by ant-design for React based on the ant-design system. Highly customizable, supports theming &amp; provides a huge number of components.</li>
+								<li>
+								<strong><a href="https://v2.grommet.io/">grommet</a>:</strong> Responsive, mobile-first, carefully designed UI component library for react. Has a large number of components. And their design is just beautiful. Simple, minimal &amp; highly responsive</li>
+								<li>
+								<strong><a href="https://evergreen.segment.com/">evergreen</a>:</strong> A flexible, contributor-friendly, sensible-default style providing UI component framework. Its foundation is super beautiful, provides a minimal design system &amp; is unique among all</li>
+								</ol>
+								
+								<blockquote>
+								<p><strong>Info!</strong>: I'm building a UI component library based on <strong>tailwindcss</strong> which is gonna be a cross-framework library. At the start, react &amp; vue support will be provided &amp; svelte support is planned too. Its name is <strong>revind.</strong> <em>And the project needs more contributors.</em> If you want to contribute, head to <a href="https://github.com/FotieMConstant/revind">https://github.com/FotieMConstant/revind</a> or contact me via <a href="https://twitter.com/KrTirtho">Twitter</a></p>
+								</blockquote>
+								
+								<h3>
+								  <a name="form-handlers" href="#form-handlers">
+								  </a>
+								  Form handlers
+								</h3>
+								
+								<p>Handling Forms is a hard thing in react. Controlling, validating input, reset state on successful submit, checking whether the input was touched, etc.. are a lot of work to do. But luckily, there are form handling libraries that make it a breeze</p>
+								
+								<p>List of form handlers:</p>
+								
+								<ol>
+								<li><strong><a href="https://formik.org/">formik</a></strong></li>
+								<li><strong><a href="https://react-hook-form.com/">react-hook-form</a></strong></li>
+								<li><strong><a href="https://final-form.org/react/">react-final-form</a></strong></li>
+								</ol>
+								
+								<h3>
+								  <a name="graphql" href="#graphql">
+								  </a>
+								  GraphQL
+								</h3>
+								
+								<p>The graph query language provides a way to fetch only required data saving both user's &amp; server's bandwidth. A technology by Facebook that sits on top of HTTP to work. It only uses the HTTP POST verb to transfer data. It's modern &amp; makes HTTP connections more eco-friendly</p>
+								
+								<p>Popular graphql libraries for React are:</p>
+								
+								<ol>
+								<li><strong><a href="https://www.apollographql.com/docs/react/">Apollo Client</a> by Apollo Server</strong></li>
+								<li><strong><a href="https://relay.dev/">Relay</a> by facebook</strong></li>
+								<li><strong><a href="https://formidable.com/open-source/urql">urql</a> - universal react query library</strong></li>
+								</ol>
+								
+								<h3>
+								  <a name="essential-ui-helper-componentshook" href="#essential-ui-helper-componentshook">
+								  </a>
+								  Essential UI helper components/hook
+								</h3>
+								
+								<p><strong>1.</strong> <strong>Tables</strong></p>
+								
+								<p>Tables are most often needed for data-driven applications. But handling this amount of dynamic text manually can be a hazard. But these React Table libraries saves the day</p>
+								
+								<p>List of table libraries:</p>
+								
+								<ol>
+								<li>
+								<strong><a href="https://material-table.com">material-table</a></strong> (best if using material-ui)</li>
+								<li>
+								<strong><a href="https://react-table.tanstack.com/">react-table</a></strong> (from the creator of react-query)</li>
+								<li>
+								<strong><a href="https://www.material-ui-datatables.com/">MUI-Datatables</a></strong> (another best match for material-ui)</li>
+								<li>
+									<strong><a href="https://bvaughn.github.io/react-virtualized">react-virtualized</a></strong> (awesome for being framework-agnostic)</li>
+</ol>
+
+<p><strong>2. Animation libraries</strong></p>
+
+<p>Animations are now a modern trend. Every website/app has some kind of animations to make the end user's experience amazing. But creating such awesome animations isn't easy, it includes mathematics, algorithms &amp; sometimes GPU acceleration too. But following react animation libraries made that work easy...</p>
+
+<p>List of animation libraries:</p>
+
+<ol>
+<li><strong><a href="https://react-spring.io/">react-spring</a></strong></li>
+<li><strong><a href="https://www.framer.com/motion/">framer-motion</a></strong></li>
+<li><strong><a href="https://www.remotion.dev/">remotion</a></strong></li>
+<li><strong><a href="https://react-move-docs.netlify.app/">react-move</a></strong></li>
+</ol>
+
+<p><strong>3.</strong> <strong>Loaders/Skeleton/Progress-bar</strong></p>
+
+<p>Always need a fallback when data is being fetched from the server, right? Showing loaders/skeleton/progress-bar makes it easier for users to wait &amp; gives your site fewer "go away at first click" scores</p>
+
+<p>Below are awesome loader libraries that can be used with React:</p>
+
+<ol>
+<li><strong><a href="https://skeletonreact.com/">react-content-loader</a></strong></li>
+<li><strong><a href="https://github.com/mhnpd/react-loader-spinner">react-loader-spinner</a></strong></li>
+<li><strong><a href="https://www.davidhu.io/react-spinners/">react-spinners</a></strong></li>
+<li><strong><a href="https://github.com/tanem/react-nprogress">@tenem/react-nprogress</a></strong></li>
+<li><strong><a href="https://github.com/dvtng/react-loading-skeleton">react-loading-skeleton</a></strong></li>
+<li><strong><a href="https://klendi.github.io/react-top-loading-bar/">react-top-loading-bar</a></strong></li>
+</ol>
+
+<p><strong>4. Infinite Scroll</strong></p>
+
+<p>Pagination is becoming an older way. Because of the increasing amount of smartphone users, it's now more convenient to use infinite scroll to get more data or an infinite amount of data. But doing so involves a lot of DOM manipulation via <em>refs</em> thus doing it manually is kind of a hazard. So infinite scroll component/hook libraries exist</p>
+
+<p>List of infinite scroll component/hook libraries:</p>
+
+<ol>
+<li><strong><a href="https://github.com/civiccc/react-waypoint">react-waypoint</a></strong></li>
+<li><strong><a href="https://danbovey.uk/react-infinite-scroller/">react-infinite-scroller</a></strong></li>
+<li><strong><a href="https://github.com/caseywebdev/react-list">react-list</a></strong></li>
+<li><strong><a href="https://github.com/ankeetmaini/react-infinite-scroll-component">react-infinite-scroll-component</a></strong></li>
+<li><strong><a href="https://github.com/jaredpalmer/react-simple-infinite-scroll">react-simple-infinite-scroll</a></strong></li>
+</ol>
+
+<p><strong><a href="https://github.com/streamich/libreact">Libreact</a></strong></p>
+
+<p>Another awesome react library is <a href="https://github.com/streamich/libreact"><code>libreact</code></a>. It's an awesome collection of all misc. react components that we don't need very often but sometimes become essential. <code>libreact</code> provides these components separately or as a collection. But either way, it almost contains all less essential components at the perfect time when we need 'em</p>
+
+
+									</div>
+
+							
+
+								</div>
+							</div>
+						</div>
+
+					
+
+						
+
+					</div>
+
+				</div>
+			</div>
+
 
 		</div>
 
